@@ -1,0 +1,23 @@
+To Run Kiri:Moto Internally:
+
+1. NodeJS must be installed (sudo apt-get install nodejs)
+2. PM2 must be installed (sudo npm install pm2 -g). PM2 is necessary for automatic startup of Kiri:Moto
+3. A modified instance of Kiri:Moto (Fablab Factory theme) must be located on the Compute Engine  (I have placed it under /opt/kirimoto)
+4. A ProxyPass directive has to be set inside Apache's httpd.conf (/opt/bitnami/apache2/conf/httpd.conf). The following can be appended at the end of the file: Include "/opt/kirimoto/httpd.conf". This will load a list of ProxyPass directives required for Kiri:Moto 
+5. Start with PM2 -> sudo pm2 start /opt/kirimoto/js/web-server.js
+
+
+The URL of Kiri:Moto can be then found under SiteURL/kiri
+
+
+
+Note:
+Changing the Style:
+- The CSS file where you can change the colors of the UI can be found under ../web/moto/style.css and ../web/kiri/style.css 
+- The color of imported 3D objects can be changed in ../js/kiri.js  -> search for "widget_deselected_color"
+
+
+Bug for Windows Developers:
+In Windows: Linking to parent folder does not work. External JS modules cannot be loaded this way.
+Copying the module to the JS folder instead of referring to it via a path is an easy fix.
+(E.g.: copy the contents of n3d.js to ext-n3d.js)

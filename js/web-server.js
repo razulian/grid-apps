@@ -519,9 +519,14 @@ function handleData(req, res, next) {
 }
 
 function minify(path) {
+    console.log("testing: ... ")
+    console.log(path);
+
     let code = fs.readFileSync(path);
     let mini = uglify.minify(code.toString());
     if (mini.error) {
+
+
         console.trace(mini.error);
         throw mini.error;
     }
@@ -714,7 +719,7 @@ function rewriteHTML(req, res, next) {
 
 let debug = false,
     nolocal = false
-    port = 8080,
+    port = 4333,
     args = process.argv.slice(2);
 
 args.forEach((arg, index) => {

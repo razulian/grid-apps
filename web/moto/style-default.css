@@ -1,5 +1,4 @@
 /** ******************************************************************
- * Fablab Factory Colors
  * Element
  ******************************************************************* */
 
@@ -34,13 +33,13 @@ button {
     max-width: 25ex;
     border: 1px solid #ccc;
     border-radius: 3px;
-    background-color: #ffd600;
+    background-color: #eee;
     padding: 2px 7px 3px 7px;
     margin-bottom: 2px !important;
 }
 button:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #aaa;
+    color: black;
 }
 button[load] {
     width: 100%;
@@ -69,8 +68,8 @@ button[del] {
     color: #222;
     padding: 4px 5px 3px 5px;
     margin-bottom: 2px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+    background-color: rgba(170,221,255,0.75);
+    border: 1px solid rgba(255,255,255,0.5);
     font-size: 12pt !important;
     font-weight: bold !important;
 }
@@ -92,8 +91,8 @@ button[del] {
     width: 33.33%;
 }
 .grouphead {
-    color: #fff;
-    background-color: rgba(25,25,25,0.85);
+    color: black;
+    background-color: rgba(170,221,255,0.7);
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-top: 5px;
@@ -126,7 +125,7 @@ button[del] {
 }
 .buton {
     font-weight: bold;
-    background-color: rgb(187,187,187,0.6);
+    background-color: #bbb;
 }
 .flow-row {
     position: relative;
@@ -205,26 +204,29 @@ button[del] {
 #control-left {
     position: fixed;
     z-index: 10000;
-    color: #555;
+    color: black;
     top: 5px;
-    left: 5px;
+    left: 0px;
     padding: 5px;
-    border: 3px solid #ddd;
-    border-radius: 3px;
-    background-color: #f4f4f4;
+    border-top: 3px solid #ddd;
+    border-right: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgba(255,255,255,0.75);
     overflow-y: scroll;
 }
 #control-left::-webkit-scrollbar {
     display: none;
 }
 #control-right::-webkit-scrollbar {
-    width: 3px;
+    display: none;
 }
 #control-right {
     position: fixed;
     z-index: 10000;
     top: 5px;
-    right: 5px;
+    right: 0px;
     bottom: 5px;
     padding: 5px;
     border-top: 3px solid #ddd;
@@ -232,29 +234,11 @@ button[del] {
     border-bottom: 3px solid #ddd;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    background-color: #f4f4f4;
+    background-color: rgba(255,255,255,0.75);
     color: #222;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: visible;
 }
-
-#control-right:hover {
-    padding-right: 2px;
-    overflow-y: scroll;
-}
-
-#control-right::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-#control-right::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-#control-right::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-
 #loading {
     position: fixed;
     top: 5px;

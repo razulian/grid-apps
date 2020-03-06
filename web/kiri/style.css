@@ -44,7 +44,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 3px 8px 8px 8px;
-    background-color: rgba(170,221,255,0.75);
+    background-color: #f4f4f4;
     color: rgba(0,0,0,0.5);
 }
 #widget-info label {
@@ -63,6 +63,7 @@ select {
     display: none;
 }
 #appid {
+    display: none;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -72,7 +73,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px 8px 3px 8px;
-    background-color: rgba(170,221,255,0.75);
+    background-color: #f4f4f4;
     color: rgba(0,0,0,0.5);
 }
 #appid a {
@@ -582,8 +583,8 @@ button[import="1"] {
     right: 20%;
     margin: 0;
     padding: 4px;
-    background-color: rgba(170,221,255,0.75);
-    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
     border-bottom: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -615,7 +616,7 @@ button[import="1"] {
     display: none;
     position: fixed;
     bottom: 25px;
-    background-color: rgba(170,221,255,0.75);
+    background-color: #f4f4f4;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 3px;
     padding: 6px;
@@ -644,7 +645,7 @@ button[import="1"] {
     border-top: 1px solid #888;
     border-left: 1px solid #888;
     border-right: 1px solid #888;
-    background-color: rgba(170,221,255,0.75);
+    background-color: #f4f4f4;
     padding: 3px 0 3px 0;
     margin: 0;
     color: black;
@@ -671,13 +672,13 @@ button[import="1"] {
     align-items: center;
     min-width: 25%;
     max-width: 50%;
-    background-color: rgba(230,245,255,0.8);
-    border: 3px solid rgba(200,215,255,0.6);
+    background-color: #f4f4f4;
+    border: 3px solid #ddd;
     border-radius: 5px;
 }
 #alert-border:hover {
-    background-color: rgba(230,245,255,0.9);
-    border: 3px solid rgba(200,215,255,0.95);
+    background-color: #f4f4f4;
+    border: 3px solid #ddd;
 }
 #alert-text {
     display: flex;
